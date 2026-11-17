@@ -1,74 +1,41 @@
 # Changelog
 
-All notable changes to this project are documented in this file.
+## [0.1.6] - 2026-11-17
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
-
-## [Unreleased]
-
-## [0.5.0] - 2026-11-17
+### Added
+- Callboard now holds multiple projects, one per event, each with its own volunteers, shifts, positions and schedule.
+- You can start a project from a Christmas Eve or VBS template, a blank project, or a copy of an earlier project.
+- You can start a project from a form-export CSV, and its shifts, positions and volunteers are set up for you, with a preview before you create it.
+- A Setup tab lets you edit each shift's title, details, time, chip label and form match text.
+- The Setup tab also lets you edit each position's name, the role it needs, and which shifts it's needed on.
+- You can import volunteer responses by dropping `.eml` files anywhere on a project page, choosing files, or pasting the email text.
+- You can import volunteer responses from PDF files that contain selectable text.
+- You can import volunteer responses from CSV form exports, one volunteer per row.
+- A review screen after every import lets you fix names, availability, roles and preferences before adding anyone.
+- Someone who is already on the list is updated by an import instead of being added twice.
+- Clear messages explain scanned PDFs, unreadable files and CSV columns that don't match the form.
+- Each volunteer now has 1st, 2nd and 3rd role choices, a max number of shifts, notes and partial availability.
+- A "Fill empty positions" button balances shift counts, respects max shifts and favors preferred roles.
+- Dropdowns list only volunteers who are trained and available, show "(1st choice)" style hints, and hide anyone already placed in that shift.
+- Warnings appear for shifts that can't be fully staffed, volunteers booked past their max, and assignments that no longer match.
+- A shifts-per-volunteer tally sits beside the schedule.
+- You can save a schedule as CSV and print it.
+- Undo is available after clearing, removing or importing.
+- You can save a backup of all projects and restore it later.
 
 ### Changed
-- Renamed the project to Callboard. The page title, home heading, README and
-  backup filename (`callboard-backup.json`) now use the new name.
-- Saved data is unaffected by the rename; existing projects and volunteers load as before.
+- Volunteer qualifications are now role groups (Stationary, Wireless, Dolly, Jib, Shading, Lyrics, PPT) instead of one box per camera.
+- The color scheme changed from green to blue, with neutral grays in light and dark mode.
+- The starter project now uses fictional volunteer names.
+- The app is now named Callboard, and the backup file is now `callboard-backup.json`.
+- Data from the earlier single-event version is converted automatically the first time you open Callboard.
 
-## [0.4.0] - 2026-11-17
+### Fixed
+- Saving a CSV or backup now works as a normal browser download when the page is hosted outside claude.ai.
 
-### Added
-- Create a project directly from a form-export CSV. Shifts are built from the
-  distinct availability answers (sorted by date and time, with chip labels and
-  match text), positions are built from the trained roles, and the volunteers
-  open in the review screen.
-- Preview in the New project dialog showing the responses, shifts and positions
-  found in the chosen CSV.
-- Standalone download support: CSV and backup saves fall back to a normal
-  browser download when the page is not running inside claude.ai.
+### Removed
+- The serif typeface is gone, and the whole interface now uses Instrument Sans.
 
-### Changed
-- Replaced the green theme with a blue one and neutral grays, in light and dark mode.
-- Removed the serif typeface; the whole interface now uses Instrument Sans.
-- Sample data now uses fictional volunteer names.
+---
 
-## [0.3.0] - 2026-11-17
-
-### Added
-- Import volunteer responses from PDF files with selectable text (pdf.js, loaded on first use).
-- Import volunteer responses from CSV form exports, one volunteer per row.
-- Clear error messages for scanned PDFs, unreadable files and unrecognized CSV columns.
-
-## [0.2.0] - 2026-11-17
-
-### Added
-- Multiple projects (Christmas Eve, Easter, VBS, or any event), each with its own
-  volunteers, shifts, positions and schedule.
-- Project templates (Christmas Eve, VBS, blank) and copy-from-existing-project.
-- Setup tab for editing shifts (title, details, time, chip label, form match text)
-  and positions (role needed, which shifts each is needed on).
-- Import of volunteer response emails by drag and drop of `.eml` files, file picker,
-  or pasted text, with a review screen and update-existing-volunteer matching.
-- Volunteer preferences (1st, 2nd and 3rd role choice), max shifts, notes and
-  partial-availability notes.
-- Role groups (Stationary, Wireless, Dolly, Jib, Shading, Lyrics, PPT) replacing
-  per-camera qualification columns.
-- Auto-fill using an optimal assignment (Hungarian algorithm) that balances shift
-  counts, honors max shifts and favors preferred roles.
-- Undo for destructive actions, backup and restore of all projects, and
-  drag-anywhere import overlay.
-
-### Changed
-- Dropdowns now list volunteers by preference rank and show "(1st choice)" style hints.
-
-### Migrated
-- Data from the single-event version is converted automatically on first load.
-
-## [0.1.0] - 2026-11-17
-
-### Added
-- Single-event Christmas Eve camera schedule converted from the original spreadsheet.
-- Dropdowns filtered by role qualification and shift availability, with no
-  double-booking within a shift.
-- Shifts-per-volunteer tally, coverage warnings for shifts that cannot be fully
-  staffed, CSV export and print layout.
-- Data saved in the browser with `localStorage`.
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
