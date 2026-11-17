@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+
+# Never commit real volunteer data
+*.eml
+*.csv
+*backup*.json
+
+# Editors and tooling
+.vscode/
+.idea/
+node_modules/
