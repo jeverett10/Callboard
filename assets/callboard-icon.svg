@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Logo_Bright" data-name="Logo Bright" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0f172a;
+      }
+
+      .cls-2 {
+        fill: #0047cc;
+      }
+
+      .cls-3 {
+        fill: #f7fafd;
+      }
+    </style>
+  </defs>
+  <rect class="cls-2" width="1024" height="1024" rx="224" ry="224"/>
+  <g>
+    <rect class="cls-3" x="189.44" y="225.28" width="340.48" height="161.28" rx="35.84" ry="35.84"/>
+    <rect class="cls-3" x="574.72" y="225.28" width="259.84" height="161.28" rx="35.84" ry="35.84"/>
+    <rect class="cls-3" x="189.44" y="431.36" width="197.12" height="161.28" rx="35.84" ry="35.84"/>
+    <rect class="cls-3" x="628.48" y="637.44" width="206.08" height="161.28" rx="35.84" ry="35.84"/>
+    <rect class="cls-3" x="189.44" y="637.44" width="394.24" height="161.28" rx="35.84" ry="35.84"/>
+    <rect class="cls-1" x="431.36" y="431.36" width="403.2" height="161.28" rx="35.84" ry="35.84"/>
+  </g>
+</svg>

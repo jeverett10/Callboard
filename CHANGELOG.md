@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.1.8] - 2026-11-19
+
+### Added
+- Callboard has a new logo, a board of schedule slots with one open slot, shown beside the name on the home screen.
+- The logo appears on every project page as a button that takes youback to all projects.
+- The browser tab now shows the new logo as its icon.
+
+### Changed
+- The colors are now a deeper blue with soft gray backgrounds in light mode and charcoal in dark mode.
+- Dark mode uses al ighter blue for buttons and highlights so they stay readable.
+- The "All Projects" link now shows the logo beside the text.
+- Mobile browser bars now match the blue theme color.
+
 ## [0.1.6] - 2026-11-17
 
 ### Added
